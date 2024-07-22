@@ -11,6 +11,8 @@ import (
 
 func main() {
 
+	//inicia as variaveis ambiente
+
 	db.DBConnection()                //inicia o banco de dados
 	db.DB.AutoMigrate(models.Task{}) //gera as migrações para a criação das tabelas tarefas
 	db.DB.AutoMigrate(models.User{}) //gera as migrações para a criação das tabelas users
